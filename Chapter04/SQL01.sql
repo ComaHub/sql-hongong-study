@@ -1,0 +1,18 @@
+USE market_db;
+
+CREATE TABLE hongong4 (
+	tinyint_col TINYINT,
+  smallint_col SMALLINT,
+  int_col INT,
+  bigint_col BIGINT
+);
+
+INSERT INTO hongong4
+VALUE (127, 32767, 2147483647, 9000000000000000000);
+
+INSERT INTO hongong4
+VALUE (128, 32768, 2147483648, 90000000000000000000);
+
+CREATE TABLE big_table (
+	data1 VARCHAR(16384)
+);
